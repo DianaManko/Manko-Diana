@@ -16,6 +16,3 @@ for movi in range(maxx): # ищем каждый фильм
         max_movi = movi
         
 print ("фильм с максимальным рейтингом с id",max_movi)
-        
-    
-        
