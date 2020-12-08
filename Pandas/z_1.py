@@ -11,7 +11,7 @@ sort_move = data.query("rating==5.0") # исключаем ненужные ст
 
 for movi in range(maxx): # ищем каждый фильм
 
-    sort = data.query("movieId ==",movi)
+    sort = data.query("movieId == @movi")
     max_id = sort.shape[0]   #сколько строк с данным фильмом и рейтингом 5.0
     if max_id > max_film:
         max_film = max_id
